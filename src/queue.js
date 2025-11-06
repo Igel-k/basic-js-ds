@@ -21,9 +21,9 @@ class Queue {
   getUnderlyingList() {
     return this.head;
   }
-  
+
   enqueue(value) {
-    const newNode = new ListNode(value);
+    const newNode = { value, next: null };
     if (this.head === null) {
       this.head = newNode;
       this.tail = newNode;
